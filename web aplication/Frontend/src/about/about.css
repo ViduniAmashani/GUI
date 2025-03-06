@@ -1,0 +1,123 @@
+
+.background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.background .backbgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+.staff-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: auto; 
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
+
+
+.card {
+  background: white;
+  border: 2px solid rgba(173, 113, 85, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  width: 250px; 
+  height: 320px; 
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0; 
+  backdrop-filter: blur(5px);
+}
+
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+.card h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #333;
+}
+
+
+.card p {
+  font-size: 14px;
+  color:black;
+  margin: 2px 0;
+}
+
+
+.paragraph1, .paragraph2 {
+  text-align: center;
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+
+.header2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.para1, .para2 {
+  font-size: 18px;
+  color: black;
+  font-family: Poppins;
+}
+
+
+@media (max-width: 1024px) {
+  .staff-container {
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+
+  .paragraph1, .paragraph2 {
+      padding: 15px;
+  }
+}

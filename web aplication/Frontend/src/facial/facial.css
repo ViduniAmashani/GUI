@@ -1,0 +1,71 @@
+/* Background Image: Cover Full Screen */
+.fbgimage {
+  position: fixed; /* Keep it fixed to cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensures it fills the screen without distortion */
+  background-size: cover; /* Cover the entire screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repetition */
+  z-index: -1;
+  
+}
+
+
+/* Form Container: Centered */
+.hbooking-form-container {
+  max-width: 600px; /* Adjust to your preferred width */
+  width: 90%; /* Makes it responsive */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  
+}
+  
+  .fbooking-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .booking-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .booking-form input,
+  .booking-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .booking-form .fbookbutton {
+    padding: 10px;
+    background-color:#ad7155;
+    
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .booking-form .fbookbutton:hover {
+    background-color: #ad7155;
+  }

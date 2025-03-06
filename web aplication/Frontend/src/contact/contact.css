@@ -1,0 +1,110 @@
+.contact-container .backgroundimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+
+.contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-left: 400px;
+}
+
+
+.contact .content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.contact .header2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.contact .para {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.contact .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.contact .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact .text h6.header3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.contact .text p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact .text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact .text a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .contact .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact .box {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

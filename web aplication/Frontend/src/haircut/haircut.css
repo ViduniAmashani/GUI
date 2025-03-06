@@ -1,0 +1,83 @@
+.hbooking-form-container .hbgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.hbooking-form-container {
+  max-width: 600px; 
+  width: 100%; 
+  margin: 50px auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; 
+  margin-left: 450px;
+}
+
+
+.hbooking-form-container .cheading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: serif;
+}
+
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: serif;
+}
+
+
+.form-row {
+  display: flex;
+  gap: 15px; 
+  margin-bottom: 15px; 
+}
+
+
+.booking-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #555;
+  flex: 1; 
+}
+
+
+.booking-form input,
+.booking-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 100%; 
+}
+
+
+.booking-form .hbookbutton {
+  padding: 10px;
+  background-color: #ad7155;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%; 
+}
+
+
+.booking-form .hbookbutton:hover {
+  background-color: #8a543c;
+}
